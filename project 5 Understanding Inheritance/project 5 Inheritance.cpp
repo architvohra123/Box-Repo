@@ -26,10 +26,15 @@ public:
     ~Car(){
         cout<<"Car Dest"<<endl;
     }
+    void print(){
+        tyres="lol";
+        cout<<tyres<<endl;
+    }
 };
 int main(){
     Car c(101);
-    c.print();
+    c.Vehicle::print();
     c.fuel="tel";
     cout<<c.fuel<<endl;
+    c.print();
 }
