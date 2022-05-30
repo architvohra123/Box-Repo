@@ -8,6 +8,9 @@ public:
     void print(){
         cout<<"Vehicle is printed"<<endl;
     }
+    void print2(){
+        cout<<tyres<<endl;
+    }
     Vehicle(){
         cout<<"Vehicle Const"<<endl;
     }
@@ -37,4 +40,6 @@ int main(){
     c.fuel="tel";
     cout<<c.fuel<<endl;
     c.print();
+    Vehicle V;
+    V.print2();
 }
