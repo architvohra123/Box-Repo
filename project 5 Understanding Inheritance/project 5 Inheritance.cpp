@@ -23,8 +23,13 @@ public:
     Car(int x){
         cout<<"Car Param Const with argument "<<x<<endl;
     }
+    ~Car(){
+        cout<<"Car Dest"<<endl;
+    }
 };
 int main(){
     Car c(101);
     c.print();
+    c.fuel="tel";
+    cout<<c.fuel<<endl;
 }
