@@ -8,9 +8,6 @@ public:
     void print(){
         cout<<"Vehicle is printed"<<endl;
     }
-    void print2(){
-        cout<<tyres<<endl;
-    }
     Vehicle(){
         cout<<"Vehicle Const"<<endl;
     }
@@ -23,23 +20,16 @@ protected:
 class Car: public Vehicle{
 public:
     string color;
-    Car(int x){
-        cout<<"Car Param Const with argument "<<x<<endl;
+    Car(){
+        cout<<"Car Const"<<endl;
     }
     ~Car(){
         cout<<"Car Dest"<<endl;
     }
     void print(){
-        tyres="lol";
-        cout<<tyres<<endl;
+        cout<<"Car is printed";
     }
 };
 int main(){
-    Car c(101);
-    c.Vehicle::print();
-    c.fuel="tel";
-    cout<<c.fuel<<endl;
-    c.print();
-    Vehicle V;
-    V.print2();
+    Car c;
 }
