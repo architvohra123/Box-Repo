@@ -31,20 +31,7 @@ public:
         cout<<"Car is printed";
     }
 };
-class Truck: public Vehicle{
-public:
-    int storage;
-    Truck(){
-        cout<<"Truck const"<<endl;
-    }
-    ~Truck(){
-        cout<<"Truck dest"<<endl;
-    }
-    void print(){
-        cout<<"Truck is printed"<<endl;
-    }
-};
-class Bus:public Car,public Truck{
+class Bus:public Car{
 public:
     Bus(){
         cout<<"Bus const"<<endl;
@@ -61,8 +48,6 @@ int main(){
     v.print();
     Car c;
     c.print();
-    Truck t;
-    t.print();
     Bus b;
     b.print();
 }
