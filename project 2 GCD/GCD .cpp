@@ -20,6 +20,7 @@ int main() {
   }
 
   cout << "HCF = " << hcf;
+  cout << "hcf = " << HCF;
 
   return 0;
 }
